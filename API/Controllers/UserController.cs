@@ -52,7 +52,7 @@ public class UserController : Controller
         return Ok(response.User);
     }
 
-    [HttpPost("search-user/{identification}")]
+    [HttpGet("search-user/{identification}")]
     public ActionResult<UserViewModel> SearchUser(string identification)
     {
         var response = _userService.SearchById(identification);
@@ -62,7 +62,7 @@ public class UserController : Controller
             return BadRequest(response.Message);
         }
 
-        return Ok(response.User);
+        return Ok(new UserViewModel(response.User));
     }
 
 
