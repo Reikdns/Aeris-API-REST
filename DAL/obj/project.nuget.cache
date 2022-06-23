@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TN+bzq2CLq74ghAtZKsDS3DmYMvdN7T8Rerf3PCMoZGaw0125T/ZAzliSzeEvqud4eu2O09JC53T/rVzeU1vkQ==",
+  "dgSpecHash": "hHF12GeyuL94ZPcj+Smp1ywERep2ERFjDQenPk/8XsCwV43hgFqVwrMib49EuI1OWF5aWqv4pr64NMeYWE4wVg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Reikd\\documents\\aeris-api-rest\\DAL\\DAL.csproj",
+  "projectFilePath": "C:\\Users\\Reikd\\documents\\Aeris-Api-rest\\DAL\\DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Reikd\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Reikd\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

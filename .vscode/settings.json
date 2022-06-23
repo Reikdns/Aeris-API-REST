@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/ae70bf7b-1999-4e42-ba59-3425061b3154/microsoft.web/sites/subscriptions/ae70bf7b-1999-4e42-ba59-3425061b3154/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/Aeris",
+    "appService.deploySubpath": "API\\bin\\Debug\\net6.0\\publish"
+}

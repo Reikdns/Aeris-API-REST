@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Reikd\\documents\\aeris-api-rest\\BLL\\BLL.csproj": {}
+    "C:\\Users\\Reikd\\documents\\Aeris-Api-rest\\BLL\\BLL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Reikd\\documents\\aeris-api-rest\\BLL\\BLL.csproj": {
+    "C:\\Users\\Reikd\\documents\\Aeris-Api-rest\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Reikd\\documents\\aeris-api-rest\\BLL\\BLL.csproj",
+        "projectUniqueName": "C:\\Users\\Reikd\\documents\\Aeris-Api-rest\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "C:\\Users\\Reikd\\documents\\aeris-api-rest\\BLL\\BLL.csproj",
+        "projectPath": "C:\\Users\\Reikd\\documents\\Aeris-Api-rest\\BLL\\BLL.csproj",
         "packagesPath": "C:\\Users\\Reikd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Reikd\\documents\\aeris-api-rest\\BLL\\obj\\",
+        "outputPath": "C:\\Users\\Reikd\\documents\\Aeris-Api-rest\\BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Reikd\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Reikd\\documents\\aeris-api-rest\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Users\\Reikd\\documents\\aeris-api-rest\\DAL\\DAL.csproj"
+              "C:\\Users\\Reikd\\documents\\Aeris-Api-rest\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\Reikd\\documents\\Aeris-Api-rest\\DAL\\DAL.csproj"
               },
               "C:\\Users\\Reikd\\documents\\aeris-api-rest\\Entity\\Entity.csproj": {
                 "projectPath": "C:\\Users\\Reikd\\documents\\aeris-api-rest\\Entity\\Entity.csproj"
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\Users\\Reikd\\documents\\aeris-api-rest\\DAL\\DAL.csproj": {
+    "C:\\Users\\Reikd\\documents\\Aeris-Api-rest\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Reikd\\documents\\aeris-api-rest\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Reikd\\documents\\Aeris-Api-rest\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\Reikd\\documents\\aeris-api-rest\\DAL\\DAL.csproj",
+        "projectPath": "C:\\Users\\Reikd\\documents\\Aeris-Api-rest\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\Reikd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Reikd\\documents\\aeris-api-rest\\DAL\\obj\\",
+        "outputPath": "C:\\Users\\Reikd\\documents\\Aeris-Api-rest\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Reikd\\AppData\\Roaming\\NuGet\\NuGet.Config",

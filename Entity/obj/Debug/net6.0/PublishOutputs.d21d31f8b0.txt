@@ -1,0 +1,3 @@
+C:\Users\Reikd\documents\Aeris-Api-rest\Entity\bin\Debug\net6.0\publish\Entity.dll
+C:\Users\Reikd\documents\Aeris-Api-rest\Entity\bin\Debug\net6.0\publish\Entity.deps.json
+C:\Users\Reikd\documents\Aeris-Api-rest\Entity\bin\Debug\net6.0\publish\Entity.pdb

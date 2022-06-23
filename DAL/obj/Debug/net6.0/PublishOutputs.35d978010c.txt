@@ -1,0 +1,11 @@
+C:\Users\Reikd\documents\Aeris-Api-rest\DAL\bin\Debug\net6.0\publish\DAL.dll
+C:\Users\Reikd\documents\Aeris-Api-rest\DAL\bin\Debug\net6.0\publish\DAL.deps.json
+C:\Users\Reikd\documents\Aeris-Api-rest\DAL\bin\Debug\net6.0\publish\DAL.pdb
+C:\Users\Reikd\documents\Aeris-Api-rest\DAL\bin\Debug\net6.0\publish\System.Data.SqlClient.dll
+C:\Users\Reikd\documents\Aeris-Api-rest\DAL\bin\Debug\net6.0\publish\runtimes\win-arm64\native\sni.dll
+C:\Users\Reikd\documents\Aeris-Api-rest\DAL\bin\Debug\net6.0\publish\runtimes\win-x64\native\sni.dll
+C:\Users\Reikd\documents\Aeris-Api-rest\DAL\bin\Debug\net6.0\publish\runtimes\win-x86\native\sni.dll
+C:\Users\Reikd\documents\Aeris-Api-rest\DAL\bin\Debug\net6.0\publish\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Reikd\documents\Aeris-Api-rest\DAL\bin\Debug\net6.0\publish\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Reikd\documents\Aeris-Api-rest\DAL\bin\Debug\net6.0\publish\Entity.dll
+C:\Users\Reikd\documents\Aeris-Api-rest\DAL\bin\Debug\net6.0\publish\Entity.pdb

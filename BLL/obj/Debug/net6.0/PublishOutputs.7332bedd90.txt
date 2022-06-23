@@ -1,0 +1,13 @@
+C:\Users\Reikd\documents\Aeris-Api-rest\BLL\bin\Debug\net6.0\publish\BLL.dll
+C:\Users\Reikd\documents\Aeris-Api-rest\BLL\bin\Debug\net6.0\publish\BLL.deps.json
+C:\Users\Reikd\documents\Aeris-Api-rest\BLL\bin\Debug\net6.0\publish\BLL.pdb
+C:\Users\Reikd\documents\Aeris-Api-rest\BLL\bin\Debug\net6.0\publish\System.Data.SqlClient.dll
+C:\Users\Reikd\documents\Aeris-Api-rest\BLL\bin\Debug\net6.0\publish\runtimes\win-arm64\native\sni.dll
+C:\Users\Reikd\documents\Aeris-Api-rest\BLL\bin\Debug\net6.0\publish\runtimes\win-x64\native\sni.dll
+C:\Users\Reikd\documents\Aeris-Api-rest\BLL\bin\Debug\net6.0\publish\runtimes\win-x86\native\sni.dll
+C:\Users\Reikd\documents\Aeris-Api-rest\BLL\bin\Debug\net6.0\publish\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Reikd\documents\Aeris-Api-rest\BLL\bin\Debug\net6.0\publish\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Reikd\documents\Aeris-Api-rest\BLL\bin\Debug\net6.0\publish\DAL.dll
+C:\Users\Reikd\documents\Aeris-Api-rest\BLL\bin\Debug\net6.0\publish\Entity.dll
+C:\Users\Reikd\documents\Aeris-Api-rest\BLL\bin\Debug\net6.0\publish\Entity.pdb
+C:\Users\Reikd\documents\Aeris-Api-rest\BLL\bin\Debug\net6.0\publish\DAL.pdb
