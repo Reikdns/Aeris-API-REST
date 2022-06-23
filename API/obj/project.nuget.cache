@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0n0ASL8LwaKRk4SqdqVWpkAMtpJEZOwTt/Ms8eBZoC0v4lk9Zx7oKXk5FWe7ytA35wdLp/9DkvMIRsHG6DINwg==",
+  "dgSpecHash": "UfHHFUE/+eVSzXXAuw2ejbtidhv2Z2PWFsh6X71KO2iIjgBZFrpvOIzmt8ScNf7e1qHObgQMm4+oU7/T9FcHKA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Reikd\\documents\\Aeris\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\Reikd\\documents\\aeris-api-rest\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Reikd\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Reikd\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
