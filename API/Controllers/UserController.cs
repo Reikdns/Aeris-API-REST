@@ -41,16 +41,16 @@ public class UserController : Controller
         return Ok(users);
     }
 
-    // [HttpPost("register-users")]
-    // public ActionResult<UserViewModel> RegisterUser(UserInputModel user){
-    //     var response = _userService.SaveUser(MapUser(user));
+    [HttpPost("register-users")]
+    public ActionResult<UserViewModel> RegisterUser(UserInputModel user){
+        var response = _userService.SaveUser(MapUser(user));
 
-    //     if(response.User is null){
-    //         return BadRequest(response.Message);
-    //     }
+        if(response.User is null){
+            return BadRequest(response.Message);
+        }
 
-    //     return Ok(response.User);
-    // }
+        return Ok(response.User);
+    }
 
     [HttpGet("search-user/{identification}")]
     public ActionResult<UserViewModel> SearchUser(string identification)
