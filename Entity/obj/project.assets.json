@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Reikd\\Documents\\Aeris\\Entity\\Entity.csproj",
+      "projectUniqueName": "C:\\Users\\Reikd\\documents\\aeris-api-rest\\Entity\\Entity.csproj",
       "projectName": "Entity",
-      "projectPath": "C:\\Users\\Reikd\\Documents\\Aeris\\Entity\\Entity.csproj",
+      "projectPath": "C:\\Users\\Reikd\\documents\\aeris-api-rest\\Entity\\Entity.csproj",
       "packagesPath": "C:\\Users\\Reikd\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Reikd\\Documents\\Aeris\\Entity\\obj\\",
+      "outputPath": "C:\\Users\\Reikd\\documents\\aeris-api-rest\\Entity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Reikd\\AppData\\Roaming\\NuGet\\NuGet.Config",

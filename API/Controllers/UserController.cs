@@ -52,6 +52,20 @@ public class UserController : Controller
         return Ok(response.User);
     }
 
+    [HttpPost("search-user/{identification}")]
+    public ActionResult<UserViewModel> SearchUser(string identification)
+    {
+        var response = _userService.SearchById(identification);
+
+        if(response.Error)
+        {
+            return BadRequest(response.Message);
+        }
+
+        return Ok(response.User);
+    }
+
+
     private User MapUser(UserInputModel user){
         return new User {
             Nombres = user.Nombres,
