@@ -705,37 +705,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Reikd\\.nuget\\packages\\": {}
+    "C:\\Users\\kevin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Reikd\\documents\\aeris-api-rest\\api\\API.csproj",
+      "projectUniqueName": "D:\\GitHub\\Aeris\\Aeris-API-REST\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\Reikd\\documents\\aeris-api-rest\\api\\API.csproj",
-      "packagesPath": "C:\\Users\\Reikd\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Reikd\\documents\\aeris-api-rest\\api\\obj\\",
+      "projectPath": "D:\\GitHub\\Aeris\\Aeris-API-REST\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
+      "outputPath": "D:\\GitHub\\Aeris\\Aeris-API-REST\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Reikd\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Reikd\\documents\\aeris-api-rest\\BLL\\BLL.csproj": {
-              "projectPath": "C:\\Users\\Reikd\\documents\\aeris-api-rest\\BLL\\BLL.csproj"
+            "D:\\GitHub\\Aeris\\Aeris-API-REST\\BLL\\BLL.csproj": {
+              "projectPath": "D:\\GitHub\\Aeris\\Aeris-API-REST\\BLL\\BLL.csproj"
             },
-            "C:\\Users\\Reikd\\documents\\aeris-api-rest\\Entity\\Entity.csproj": {
-              "projectPath": "C:\\Users\\Reikd\\documents\\aeris-api-rest\\Entity\\Entity.csproj"
+            "D:\\GitHub\\Aeris\\Aeris-API-REST\\Entity\\Entity.csproj": {
+              "projectPath": "D:\\GitHub\\Aeris\\Aeris-API-REST\\Entity\\Entity.csproj"
             }
           }
         }
@@ -773,7 +771,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
