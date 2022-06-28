@@ -1,3 +1,6 @@
+using Domain.Repository;
+using Infrastructure.Helpers;
+using Infrastructure.Repository;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -30,8 +33,9 @@ builder.Services.AddSwaggerGen(c =>
                     }
                 });
             });
-
-
+var appSettingSection = builder.Configuration.GetSection("AppSettings");
+builder.Services.Configure<AppSettings>(appSettingSection);
+var appSettings = appSettingSection.Get<AppSettings>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -1,4 +1,7 @@
 
+using Application.Security.Service;
+using Domain.Entities;
+
 namespace API.Controllers;
 
 using System;
@@ -8,8 +11,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
-using Entity;
-using BLL;
 using API.Models;
 
 [Route("api/[controller]")]

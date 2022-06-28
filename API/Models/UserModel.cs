@@ -1,5 +1,6 @@
+using Domain.Entities;
+
 namespace API.Models;
-using Entity;
 
 public class UserInputModel : UserViewModel
 {
