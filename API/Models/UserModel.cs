@@ -4,6 +4,7 @@ using Entity;
 public class UserInputModel : UserViewModel
 {
     public string Password { get; set; }
+    public string Salt { get; set; }
 
     public UserInputModel()
     {

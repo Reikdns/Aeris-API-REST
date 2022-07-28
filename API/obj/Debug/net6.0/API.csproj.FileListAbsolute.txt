@@ -76,3 +76,13 @@ C:\Users\Reikd\documents\aeris-api-rest\api\obj\Debug\net6.0\refint\API.dll
 C:\Users\Reikd\documents\aeris-api-rest\api\obj\Debug\net6.0\API.pdb
 C:\Users\Reikd\documents\aeris-api-rest\api\obj\Debug\net6.0\API.genruntimeconfig.cache
 C:\Users\Reikd\documents\aeris-api-rest\api\obj\Debug\net6.0\ref\API.dll
+C:\Users\Reikd\Documents\Aeris-API-REST\API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Reikd\Documents\Aeris-API-REST\API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Reikd\Documents\Aeris-API-REST\API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Reikd\Documents\Aeris-API-REST\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Reikd\Documents\Aeris-API-REST\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Reikd\Documents\Aeris-API-REST\API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Reikd\Documents\Aeris-API-REST\API\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Reikd\Documents\Aeris-API-REST\API\bin\Debug\net6.0\OAuth2.dll
+C:\Users\Reikd\Documents\Aeris-API-REST\API\bin\Debug\net6.0\RestSharp.dll
+C:\Users\Reikd\Documents\Aeris-API-REST\API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

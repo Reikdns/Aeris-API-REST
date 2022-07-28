@@ -1,4 +1,3 @@
-
 namespace API.Controllers;
 
 using System;
@@ -11,9 +10,12 @@ using Microsoft.Extensions.Configuration;
 using Entity;
 using BLL;
 using API.Models;
+using API.Helper;
+using Microsoft.AspNetCore.Authorization;
 
-[Route("api/[controller]")]
+[Route("[controller]")]
 [ApiController]
+[Authorize]
 public class UserController : Controller
 {
     private readonly UserService _userService;
@@ -41,8 +43,14 @@ public class UserController : Controller
         return Ok(users);
     }
 
-    [HttpPost("register-users")]
+    [Authorize(Roles="Admin")]
+    [HttpPost("register-user")]
     public ActionResult<UserViewModel> RegisterUser(UserInputModel user){
+
+        HashedPassword hashedPassword = HashHelper.Hash(user.Password);
+        user.Password = hashedPassword.Password;
+        user.Salt = hashedPassword.Salt;
+
         var response = _userService.SaveUser(MapUser(user));
 
         if(response.User is null){
@@ -74,7 +82,8 @@ public class UserController : Controller
             Identificacion = user.Identificacion,
             Password = user.Password,
             Rol = user.Rol,
-            Username = user.Username
+            Username = user.Username,
+            Salt = user.Salt
         };
     }
 }

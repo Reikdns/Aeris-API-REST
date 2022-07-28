@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Bljh2q/U14fUHqiGAlWyeXGzUFRknEAMooyJ+NKnTVPMekONAdyIRMXsjY3gCChcwR5ho2otPr5Dpz817TUTAg==",
+  "dgSpecHash": "mYbzbxlZksK9Z5xzKsMjjZDCRpuqnt2MTLnUo917HUWCHfQq9SopIH3fETZYigsF+3OFnAQh4VNJNpe49uLpwQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Reikd\\documents\\aeris-api-rest\\Entity\\Entity.csproj",
+  "projectFilePath": "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\Entity\\Entity.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

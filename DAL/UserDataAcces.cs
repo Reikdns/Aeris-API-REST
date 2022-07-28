@@ -17,8 +17,8 @@ public class UserDataAcces{
     public void SaveUser(User user){
 
         using(var command =  _connection.CreateCommand()){
-            command.CommandText = @"INSERT INTO USERS (nombres, apellidos, edad, username, password, rol, identificacion)" 
-            + "VALUES (@nombres, @apellidos, @edad, @username, @password, @rol, @identificacion)";
+            command.CommandText = @"INSERT INTO USERS (nombres, apellidos, edad, username, password, rol, identificacion, salt)" 
+            + "VALUES (@nombres, @apellidos, @edad, @username, @password, @rol, @identificacion, @salt)";
             command.Parameters.AddWithValue("@nombres", user.Nombres);
             command.Parameters.AddWithValue("@apellidos", user.Apellidos);
             command.Parameters.AddWithValue("@edad", user.Edad);
@@ -26,6 +26,7 @@ public class UserDataAcces{
             command.Parameters.AddWithValue("@password", user.Password);
             command.Parameters.AddWithValue("@rol", user.Rol);
             command.Parameters.AddWithValue("@identificacion", user.Identificacion);
+            command.Parameters.AddWithValue("@salt", user.Salt);
             command.ExecuteNonQuery();
         }
     }
@@ -34,7 +35,7 @@ public class UserDataAcces{
         SqlDataReader dataReader;
         List<User> users = new List<User> ( );
         using (var command = _connection.CreateCommand ( )) {
-            command.CommandText = "Select * from Users";
+            command.CommandText = "SELECT * FROM Users";
             dataReader = command.ExecuteReader ( );
             if (dataReader.HasRows) {
                 while (dataReader.Read ( )) {
@@ -56,7 +57,8 @@ public class UserDataAcces{
         user.Username = (string) dataReader["username"];
         user.Password = (string) dataReader["password"];                     
         user.Rol = (string) dataReader["rol"];
-        user.Identificacion = (string) dataReader["identificacion"];                     
+        user.Identificacion = (string) dataReader["identificacion"];
+        user.Salt = (string)dataReader["salt"];
 
         return user;
     }

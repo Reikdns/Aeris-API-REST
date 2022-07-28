@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Reikd\\documents\\aeris-api-rest\\Entity\\Entity.csproj",
+      "projectUniqueName": "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\Entity\\Entity.csproj",
       "projectName": "Entity",
-      "projectPath": "C:\\Users\\Reikd\\documents\\aeris-api-rest\\Entity\\Entity.csproj",
+      "projectPath": "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\Entity\\Entity.csproj",
       "packagesPath": "C:\\Users\\Reikd\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Reikd\\documents\\aeris-api-rest\\Entity\\obj\\",
+      "outputPath": "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\Entity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Reikd\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

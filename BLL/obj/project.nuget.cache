@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rVJsanpodV72h/4tqr9E7MJ3O1WufifcP7BGou6z9serG5wOlTRkmNi9nVPUAHV6AGvIfAm2sznOnYL7eGkgQQ==",
+  "dgSpecHash": "s/PTXV8oSuzqqYtuG3PSPaIfdCkinSJQ7s9X20Yp2j84a/sXW23LU2kE8T9Z1Rh/3OQgb+LZeQHkJseJKxzenQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Reikd\\documents\\aeris-api-rest\\BLL\\BLL.csproj",
+  "projectFilePath": "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\BLL\\BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Reikd\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Reikd\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
