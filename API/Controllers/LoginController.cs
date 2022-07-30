@@ -2,9 +2,6 @@
 using System.Linq;
 using Microsoft.Extensions.Configuration;
 using System.Text;
-using System.Security.Claims;
-using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using API.Models;
@@ -29,7 +26,7 @@ namespace API.Controllers
         }
 
         [AllowAnonymous]
-        [HttpPost]
+        [HttpPost("login")]
         public async Task<IActionResult> Login(LoginViewModel systemUser)
         {
             if (!ModelState.IsValid)
@@ -37,48 +34,25 @@ namespace API.Controllers
                 return BadRequest(ErrorHelper.GetModelStateErrors(ModelState));
             }
 
-            SearchUsersResponse usersResponse = _userService.SearchAllUsers();
-            User user = usersResponse.Users.Where(p => p.Username.Equals(systemUser.Username)).FirstOrDefault();
+            var response = _userService.SearchByKey("username", systemUser.Username);
 
-            if(user == null)
+            if(response.Error)
             {
                 return NotFound(ErrorHelper.Response(404, "Usuario no encontrado."));
             }
 
-            if (HashHelper.CheckHash(systemUser.Password, user.Password, user.Salt))
+            var secretKey = Configuration.GetValue<string>("SecretKey");
+            
+            string bearerToken = AuthenticationHelper.CreateToken(systemUser, response.Response, secretKey);
+
+            if (bearerToken.Equals(String.Empty))
             {
-                var secretKey = Configuration.GetValue<string>("SecretKey");
-                var key = Encoding.ASCII.GetBytes(secretKey);
-
-                var claims = new ClaimsIdentity();
-                claims.AddClaim(new Claim(ClaimTypes.NameIdentifier, systemUser.Username));
-                claims.AddClaim(new Claim(ClaimTypes.Role, user.Rol));
-
-                var tokenDescriptor = new SecurityTokenDescriptor
-                {
-                    Subject = claims,
-                    Expires = DateTime.UtcNow.AddHours(24),
-                    SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
-                };
-
-                var tokenHandler = new JwtSecurityTokenHandler();
-                var createdToken = tokenHandler.CreateToken(tokenDescriptor);
-
-                string bearer_token = tokenHandler.WriteToken(createdToken);
-                return Ok(bearer_token);
+                return Forbid(); 
             }
             else
             {
-                return Forbid();
+                return Ok(bearerToken);
             }
         }
-
-        [HttpGet]
-        public IActionResult Get()
-        {
-            var r = ((ClaimsIdentity)User.Identity).FindFirst(ClaimTypes.NameIdentifier);
-            return Ok(r == null ? "" : r.Value);
-        }
-
     }
 }

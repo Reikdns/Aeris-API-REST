@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "trir6HpqFYIYGl4WcACz3Ockf6Mg+kjFTL1c6xNh1nwZx201H9+U04ToQPJFOnNS4uapvjVkGRFJmt9/6cvIgQ==",
+  "dgSpecHash": "LLmrP+/77hJAdAb5Ecu5qI5EW5dHxo8BOeamWyuirhEBblPQ4EWFG4LcexGKDIHyj8ODoiKelrfErk48s6kmJg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\api\\API.csproj",
+  "projectFilePath": "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Reikd\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.7\\microsoft.aspnetcore.authentication.jwtbearer.6.0.7.nupkg.sha512",
     "C:\\Users\\Reikd\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

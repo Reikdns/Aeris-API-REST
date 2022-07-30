@@ -4,9 +4,10 @@ using System;
 using System.Collections.Generic;
 using DAL;
 using Entity;
+using System.Data.SqlClient;
 public class UserService
 {
-     private readonly ConnectionManager _connection;
+    private readonly ConnectionManager _connection;
     private readonly UserDataAcces _repository;
     public UserService(string cadenaDeConexión)
     {
@@ -14,107 +15,86 @@ public class UserService
         _repository = new UserDataAcces(_connection);
     }
 
-     public SaveUserResponse SaveUser(User user)
+    public RequestResponse<User> SaveUser(User user)
     {
-        if(Validate(user.Identificacion)){        
+        if(Validate("identificacion", user.Identificacion) && Validate("username", user.Username)){        
             try
             {                                          
                 _connection.Open();                
                 _repository.SaveUser(user);
                 _connection.Close();
-                return new SaveUserResponse(user);
+                return new RequestResponse<User>(user);
             }
             catch (Exception e)
             {
-                return new SaveUserResponse(e.Message);
+                return new RequestResponse<User>(e.Message);
             }
         }
         else {
-            return new SaveUserResponse("El usuario ya ha sido registrado.");
+            return new RequestResponse<User>("El usuario ya ha sido registrado.");
         }
     }
 
-    public bool Validate(string identificacion){
-        if (SearchById(identificacion).Error)
+    private bool Validate(string key, string value){
+
+        var response = SearchByKey(key, value);
+
+        if (response.Error)
         {  
             return true;
         } 
         return false;
     }
-
-    public SearchByIdResponse SearchById(string identificacion)
-    {           
-        var response = SearchAllUsers();
-        foreach (var user in response.Users)
-        {
-            if(user.Identificacion == identificacion){
-                return new SearchByIdResponse(user);
-            }             
-        }
-        return new SearchByIdResponse("El usuario no ha sido encontrado.");
-    }            
     
-    public SearchUsersResponse SearchAllUsers()
+    public RequestResponse<List<User>> SearchAllUsers()
     {
         try
         {
             _connection.Open();
             List<User> Users = _repository.SearchAll();
             _connection.Close();
-            return new SearchUsersResponse(Users);
+            return new RequestResponse<List<User>>(Users);
         }
         catch (Exception e)
         {
-            return new SearchUsersResponse(e.Message);
+            return new RequestResponse<List<User>>(e.Message);
         }
     }
+
+    public RequestResponse<User> SearchByKey(string key, string value)
+    {
+        try
+        {
+            _connection.Open();
+            User user = _repository.SearchByKey(key, value);
+            _connection.Close();
+
+            if(user.Username == null)
+            {
+                throw new Exception("El usuario no ha sido encontrado");
+            }
+
+            return new RequestResponse<User>(user);
+        }
+        catch (Exception e)
+        {
+            return new RequestResponse<User>(e.Message);
+        }
+    }
+
 }
 
-public class SearchByIdResponse
+public class RequestResponse<T>
 {
     public bool Error { get; set; }
     public string Message { get; set; }
-    public User User { get; set; }
-    public SearchByIdResponse(User user)
+    public T Response { get; set; }
+    public RequestResponse(T response)
     {
         Error = false;
-        User = user;
+        Response = response;
     }
-    public SearchByIdResponse(string message)
-    {
-        Error = true;
-        Message = message;
-    }
-}
-
-public class SearchUsersResponse
-{
-    public bool Error { get; set; }
-    public string Message { get; set; }
-    public List<User> Users = new List<User>();
-    public SearchUsersResponse(List<User> users)
-    {
-        Error = false;
-        Users = users;
-    }
-    public SearchUsersResponse(string message)
-    {
-        Error = true;
-        Message = message;
-    }
-}
-
-public class SaveUserResponse
-{
-    public bool Error { get; set; }
-    public string Message { get; set; }
-    public User User { get; set; }
-    public SaveUserResponse(User user)
-    {
-        Error = false;
-        User = user;
-    }
-    public SaveUserResponse(string message)
+    public RequestResponse(string message)
     {
         Error = true;
         Message = message;

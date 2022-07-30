@@ -12,6 +12,7 @@ using BLL;
 using API.Models;
 using API.Helper;
 using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 [Route("[controller]")]
 [ApiController]
@@ -28,8 +29,9 @@ public class UserController : Controller
         _userService = new UserService(connectionString);
     }
 
+    [Authorize(Roles="Admin")]
     [HttpGet("get-users")]
-    public ActionResult<UserViewModel> GetUsers()
+    public ActionResult<List<UserViewModel>> GetUsers()
     {   
         var response = _userService.SearchAllUsers();
 
@@ -38,7 +40,7 @@ public class UserController : Controller
             return BadRequest(response.Message);
         }
 
-        var users = response.Users.Select(p => new UserViewModel(p));
+        var users = response.Response.Select(p => new UserViewModel(p));
 
         return Ok(users);
     }
@@ -53,26 +55,34 @@ public class UserController : Controller
 
         var response = _userService.SaveUser(MapUser(user));
 
-        if(response.User is null){
+        if(response.Error){
             return BadRequest(response.Message);
         }
 
-        return Ok(response.User);
+        return Ok(response.Response);
     }
 
-    [HttpGet("search-user/{identification}")]
-    public ActionResult<UserViewModel> SearchUser(string identification)
+    [Authorize(Roles="Admin")]
+    [HttpGet("search-by-key/{key}/{value}")]
+    public ActionResult<UserViewModel> SearchByKey(string key, string value)
     {
-        var response = _userService.SearchById(identification);
+        var response = _userService.SearchByKey(key, value);
 
         if(response.Error)
         {
             return BadRequest(response.Message);
         }
 
-        return Ok(new UserViewModel(response.User));
+        return Ok(new UserViewModel(response.Response));
     }
 
+    [Authorize]
+    [HttpGet("identity")]
+    public IActionResult GetIdentity()
+    {
+        var r = ((ClaimsIdentity)User.Identity).FindFirst(ClaimTypes.NameIdentifier);
+        return Ok(r == null ? "" : r.Value);
+    }
 
     private User MapUser(UserInputModel user){
         return new User {

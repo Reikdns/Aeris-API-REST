@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\api\\API.csproj": {}
+    "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\api\\API.csproj": {
+    "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\api\\API.csproj",
+        "projectUniqueName": "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\api\\API.csproj",
+        "projectPath": "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\API\\API.csproj",
         "packagesPath": "C:\\Users\\Reikd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\api\\obj\\",
+        "outputPath": "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Reikd\\AppData\\Roaming\\NuGet\\NuGet.Config",

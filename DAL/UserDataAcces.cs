@@ -47,6 +47,32 @@ public class UserDataAcces{
         return users;
     }
 
+    public User SearchByKey(string key, string value)
+    {
+        SqlDataReader dataReader;
+        User user = Select(key, value);
+        return user;
+    } 
+
+    private User Select(string key, string value)
+    {
+        SqlDataReader dataReader;
+        User user = new User();
+
+        using(var command = _connection.CreateCommand())
+        {
+            command.CommandText = $@"SELECT * FROM Users WHERE @value = {key}";
+            command.Parameters.AddWithValue("@value", value);
+            dataReader = command.ExecuteReader();
+            if (dataReader.HasRows)
+            {
+                dataReader.Read();
+                user = DataMapInReader(dataReader);
+            }
+            return user;
+        }
+    } 
+
     private User DataMapInReader (SqlDataReader dataReader) {
         if (!dataReader.HasRows) return null;
         User user = new User ( );
