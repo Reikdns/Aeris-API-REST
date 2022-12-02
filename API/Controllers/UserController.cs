@@ -45,7 +45,7 @@ public class UserController : Controller
         return Ok(users);
     }
 
-    [Authorize(Roles="Student")]
+    [Authorize(Roles="Admin")]
     [HttpPost("register-user")]
     public ActionResult<UserViewModel> RegisterUser(UserInputModel user){
 
