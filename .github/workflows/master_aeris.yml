@@ -6,7 +6,7 @@ name: Build and deploy ASP.Net Core app to Azure Web App - Aeris
 on:
   push:
     branches:
-      - DDD
+      - JWT_Authentication
   workflow_dispatch:
 
 jobs:
