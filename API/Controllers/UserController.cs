@@ -62,6 +62,23 @@ public class UserController : Controller
         return Ok(response.Response);
     }
 
+    [HttpPost("register-default-user")]
+    public ActionResult<DefaultUserLoginModel> RegisterDefaultUser(DefaultUserLoginModel user)
+    {
+        HashedPassword hashedPassword = HashHelper.Hash(user.Password);
+        user.Password = hashedPassword.Password;
+        user.Salt = hashedPassword.Salt;
+
+        var response = _userService.SaveUser(MapUser(user));
+
+        if(response.Error)
+        {
+            return BadRequest(response.Message);
+        }
+
+        return Ok(response.Response);
+    } 
+
     [Authorize(Roles="Admin")]
     [HttpGet("search-by-key/{key}/{value}")]
     public ActionResult<UserViewModel> SearchByKey(string key, string value)
@@ -93,6 +110,15 @@ public class UserController : Controller
             Password = user.Password,
             Rol = user.Rol,
             Username = user.Username,
+            Salt = user.Salt
+        };
+    }
+
+    private DefaultUser MapUser(DefaultUserLoginModel user)
+    {
+        return new DefaultUser{
+            Email = user.Email,
+            Password = user.Password,
             Salt = user.Salt
         };
     }

@@ -35,6 +35,28 @@ public class UserService
         }
     }
 
+    public RequestResponse<DefaultUser> SaveUser(DefaultUser user)
+    {
+        if(Validate("email", user.Email))
+        {
+            try
+            {
+                _connection.Open();
+                _repository.SaveDefaultUser(user);
+                _connection.Close();
+                return new RequestResponse<DefaultUser>(user);
+            }
+            catch (Exception e)
+            {
+                return new RequestResponse<DefaultUser>(e.Message);
+            }
+        }
+        else
+        {
+            return new RequestResponse<DefaultUser>("El correo ingresado ya está asociado a una cuenta.");
+        }
+    }
+
     private bool Validate(string key, string value){
 
         var response = SearchByKey(key, value);
