@@ -31,6 +31,19 @@ public class UserDataAcces{
         }
     }
 
+    public void SaveDefaultUser(DefaultUser user)
+    {
+        using(var command = _connection.CreateCommand())
+        {
+            command.CommandText = @"INSERT INTO LoginUser(email, password, salt)"
+            + "VALUES (@email, @password, @salt)";
+            command.Parameters.AddWithValue("@email", user.Email);
+            command.Parameters.AddWithValue("@password", user.Password);
+            command.Parameters.AddWithValue("@salt", user.Salt);
+            command.ExecuteNonQuery();
+        }
+    }
+
     public List<User> SearchAll ( ) {
         SqlDataReader dataReader;
         List<User> users = new List<User> ( );
