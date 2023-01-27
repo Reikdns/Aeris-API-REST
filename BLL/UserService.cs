@@ -37,7 +37,7 @@ public class UserService
 
     public RequestResponse<DefaultUser> SaveUser(DefaultUser user)
     {
-        if(Validate("email", user.Email))
+        if(DefaultValidate("email", user.Email))
         {
             try
             {
@@ -65,6 +65,17 @@ public class UserService
         {  
             return true;
         } 
+        return false;
+    }
+
+    private bool DefaultValidate(string key, string value)
+    {
+        var response = DefaultSearchByKey(key, value);
+
+        if (response.Error)
+        {
+            return true;
+        }
         return false;
     }
     
@@ -101,6 +112,27 @@ public class UserService
         catch (Exception e)
         {
             return new RequestResponse<User>(e.Message);
+        }
+    }
+
+    public RequestResponse<DefaultUser> DefaultSearchByKey(string key, string value)
+    {
+        try
+        {
+            _connection.Open();
+            DefaultUser user = _repository.DefaultSearchByKey(key, value);
+            _connection.Close();
+
+            if (user.Email == null)
+            {
+                throw new Exception("El usuario no ha sido encontrado");
+            }
+
+            return new RequestResponse<DefaultUser>(user);
+        }
+        catch (Exception e)
+        {
+            return new RequestResponse<DefaultUser>(e.Message);
         }
     }
 

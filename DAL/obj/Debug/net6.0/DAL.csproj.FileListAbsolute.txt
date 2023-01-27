@@ -15,21 +15,6 @@ C:/Users/Reikd/documents/Aeris/DAL/obj/Debug/net6.0/DAL.pdb
 C:/Users/Reikd/documents/Aeris/DAL/obj/Debug/net6.0/ref/DAL.dll
 <<<<<<< HEAD
 =======
-C:/Users/Reikd/documents/aeris-api-rest/DAL/bin/Debug/net6.0/DAL.deps.json
-C:/Users/Reikd/documents/aeris-api-rest/DAL/bin/Debug/net6.0/DAL.dll
-C:/Users/Reikd/documents/aeris-api-rest/DAL/bin/Debug/net6.0/DAL.pdb
-C:/Users/Reikd/documents/aeris-api-rest/DAL/bin/Debug/net6.0/Entity.dll
-C:/Users/Reikd/documents/aeris-api-rest/DAL/bin/Debug/net6.0/Entity.pdb
-C:/Users/Reikd/documents/aeris-api-rest/DAL/obj/Debug/net6.0/DAL.csproj.AssemblyReference.cache
-C:/Users/Reikd/documents/aeris-api-rest/DAL/obj/Debug/net6.0/DAL.GeneratedMSBuildEditorConfig.editorconfig
-C:/Users/Reikd/documents/aeris-api-rest/DAL/obj/Debug/net6.0/DAL.AssemblyInfoInputs.cache
-C:/Users/Reikd/documents/aeris-api-rest/DAL/obj/Debug/net6.0/DAL.AssemblyInfo.cs
-C:/Users/Reikd/documents/aeris-api-rest/DAL/obj/Debug/net6.0/DAL.csproj.CoreCompileInputs.cache
-C:/Users/Reikd/documents/aeris-api-rest/DAL/obj/Debug/net6.0/DAL.csproj.CopyComplete
-C:/Users/Reikd/documents/aeris-api-rest/DAL/obj/Debug/net6.0/DAL.dll
-C:/Users/Reikd/documents/aeris-api-rest/DAL/obj/Debug/net6.0/refint/DAL.dll
-C:/Users/Reikd/documents/aeris-api-rest/DAL/obj/Debug/net6.0/DAL.pdb
-C:/Users/Reikd/documents/aeris-api-rest/DAL/obj/Debug/net6.0/ref/DAL.dll
 >>>>>>> 52834fc7fe34d11e9c7a4d296b2049963287d5b1
 /workspaces/Aeris-API-REST/DAL/obj/Debug/net6.0/DAL.csproj.AssemblyReference.cache
 /workspaces/Aeris-API-REST/DAL/obj/Debug/net6.0/DAL.GeneratedMSBuildEditorConfig.editorconfig
@@ -46,21 +31,18 @@ C:/Users/Reikd/documents/aeris-api-rest/DAL/obj/Debug/net6.0/ref/DAL.dll
 /workspaces/Aeris-API-REST/DAL/bin/Debug/net6.0/Entity.pdb
 /workspaces/Aeris-API-REST/DAL/obj/Debug/net6.0/DAL.csproj.CopyComplete
 /workspaces/Aeris-API-REST/DAL/obj/Debug/net6.0/ref/DAL.dll
-<<<<<<< HEAD
-C:\Users\Reikd\Documents\Aeris-API-REST\DAL\obj\Debug\net6.0\DAL.csproj.AssemblyReference.cache
-C:\Users\Reikd\Documents\Aeris-API-REST\DAL\obj\Debug\net6.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Reikd\Documents\Aeris-API-REST\DAL\obj\Debug\net6.0\DAL.AssemblyInfoInputs.cache
-C:\Users\Reikd\Documents\Aeris-API-REST\DAL\obj\Debug\net6.0\DAL.AssemblyInfo.cs
-C:\Users\Reikd\Documents\Aeris-API-REST\DAL\obj\Debug\net6.0\DAL.csproj.CoreCompileInputs.cache
-C:\Users\Reikd\Documents\Aeris-API-REST\DAL\obj\Debug\net6.0\DAL.dll
-C:\Users\Reikd\Documents\Aeris-API-REST\DAL\obj\Debug\net6.0\refint\DAL.dll
-C:\Users\Reikd\Documents\Aeris-API-REST\DAL\obj\Debug\net6.0\DAL.pdb
 C:\Users\Reikd\Documents\Aeris-API-REST\DAL\bin\Debug\net6.0\DAL.deps.json
 C:\Users\Reikd\Documents\Aeris-API-REST\DAL\bin\Debug\net6.0\DAL.dll
 C:\Users\Reikd\Documents\Aeris-API-REST\DAL\bin\Debug\net6.0\DAL.pdb
 C:\Users\Reikd\Documents\Aeris-API-REST\DAL\bin\Debug\net6.0\Entity.dll
 C:\Users\Reikd\Documents\Aeris-API-REST\DAL\bin\Debug\net6.0\Entity.pdb
+C:\Users\Reikd\Documents\Aeris-API-REST\DAL\obj\Debug\net6.0\DAL.csproj.AssemblyReference.cache
+C:\Users\Reikd\Documents\Aeris-API-REST\DAL\obj\Debug\net6.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Reikd\Documents\Aeris-API-REST\DAL\obj\Debug\net6.0\DAL.AssemblyInfoInputs.cache
+C:\Users\Reikd\Documents\Aeris-API-REST\DAL\obj\Debug\net6.0\DAL.AssemblyInfo.cs
+C:\Users\Reikd\Documents\Aeris-API-REST\DAL\obj\Debug\net6.0\DAL.csproj.CoreCompileInputs.cache
 C:\Users\Reikd\Documents\Aeris-API-REST\DAL\obj\Debug\net6.0\DAL.csproj.CopyComplete
+C:\Users\Reikd\Documents\Aeris-API-REST\DAL\obj\Debug\net6.0\DAL.dll
+C:\Users\Reikd\Documents\Aeris-API-REST\DAL\obj\Debug\net6.0\refint\DAL.dll
+C:\Users\Reikd\Documents\Aeris-API-REST\DAL\obj\Debug\net6.0\DAL.pdb
 C:\Users\Reikd\Documents\Aeris-API-REST\DAL\obj\Debug\net6.0\ref\DAL.dll
-=======
->>>>>>> 52834fc7fe34d11e9c7a4d296b2049963287d5b1

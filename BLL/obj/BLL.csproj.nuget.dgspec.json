@@ -1,36 +1,38 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/Aeris-API-REST/BLL/BLL.csproj": {}
+    "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\BLL\\BLL.csproj": {}
   },
   "projects": {
-    "/workspaces/Aeris-API-REST/BLL/BLL.csproj": {
+    "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/Aeris-API-REST/BLL/BLL.csproj",
+        "projectUniqueName": "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "/workspaces/Aeris-API-REST/BLL/BLL.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/Aeris-API-REST/BLL/obj/",
+        "projectPath": "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\BLL\\BLL.csproj",
+        "packagesPath": "C:\\Users\\Reikd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Reikd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/workspaces/Aeris-API-REST/DAL/DAL.csproj": {
-                "projectPath": "/workspaces/Aeris-API-REST/DAL/DAL.csproj"
+              "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\DAL\\DAL.csproj"
               },
-              "/workspaces/Aeris-API-REST/Entity/Entity.csproj": {
-                "projectPath": "/workspaces/Aeris-API-REST/Entity/Entity.csproj"
+              "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\Entity\\Entity.csproj"
               }
             }
           }
@@ -50,58 +52,45 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.12, 6.0.12]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.12, 6.0.12]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.308\\RuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "/usr/local/dotnet/7.0.101/sdk/7.0.101/RuntimeIdentifierGraph.json"
->>>>>>> 52834fc7fe34d11e9c7a4d296b2049963287d5b1
         }
       }
     },
-    "/workspaces/Aeris-API-REST/DAL/DAL.csproj": {
+    "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/Aeris-API-REST/DAL/DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "/workspaces/Aeris-API-REST/DAL/DAL.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/Aeris-API-REST/DAL/obj/",
+        "projectPath": "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\Reikd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Reikd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/workspaces/Aeris-API-REST/Entity/Entity.csproj": {
-                "projectPath": "/workspaces/Aeris-API-REST/Entity/Entity.csproj"
+              "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\Entity\\Entity.csproj"
               }
             }
           }
@@ -127,50 +116,37 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.12, 6.0.12]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.12, 6.0.12]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.308\\RuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "/usr/local/dotnet/7.0.101/sdk/7.0.101/RuntimeIdentifierGraph.json"
->>>>>>> 52834fc7fe34d11e9c7a4d296b2049963287d5b1
         }
       }
     },
-    "/workspaces/Aeris-API-REST/Entity/Entity.csproj": {
+    "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/Aeris-API-REST/Entity/Entity.csproj",
+        "projectUniqueName": "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "/workspaces/Aeris-API-REST/Entity/Entity.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/Aeris-API-REST/Entity/obj/",
+        "projectPath": "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\Entity\\Entity.csproj",
+        "packagesPath": "C:\\Users\\Reikd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Reikd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -194,31 +170,16 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.12, 6.0.12]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.12, 6.0.12]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.308\\RuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "/usr/local/dotnet/7.0.101/sdk/7.0.101/RuntimeIdentifierGraph.json"
->>>>>>> 52834fc7fe34d11e9c7a4d296b2049963287d5b1
         }
       }
     }

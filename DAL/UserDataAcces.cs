@@ -62,10 +62,15 @@ public class UserDataAcces{
 
     public User SearchByKey(string key, string value)
     {
-        SqlDataReader dataReader;
         User user = Select(key, value);
         return user;
-    } 
+    }
+
+    public DefaultUser DefaultSearchByKey(string key, string value)
+    {
+        DefaultUser user = DefaultSelect(key, value);
+        return user;
+    }
 
     private User Select(string key, string value)
     {
@@ -84,7 +89,26 @@ public class UserDataAcces{
             }
             return user;
         }
-    } 
+    }
+
+    private DefaultUser DefaultSelect(string key, string value)
+    {
+        SqlDataReader dataReader;
+        DefaultUser user = new DefaultUser();
+
+        using (var command = _connection.CreateCommand())
+        {
+            command.CommandText = $@"SELECT * FROM LoginUser WHERE @value = {key}";
+            command.Parameters.AddWithValue("@value", value);
+            dataReader = command.ExecuteReader();
+            if (dataReader.HasRows)
+            {
+                dataReader.Read();
+                user = DefaultDataMapInReader(dataReader);
+            }
+            return user;
+        }
+    }
 
     private User DataMapInReader (SqlDataReader dataReader) {
         if (!dataReader.HasRows) return null;
@@ -97,6 +121,18 @@ public class UserDataAcces{
         user.Password = (string) dataReader["password"];                     
         user.Rol = (string) dataReader["rol"];
         user.Identificacion = (string) dataReader["identificacion"];
+        user.Salt = (string)dataReader["salt"];
+
+        return user;
+    }
+
+    private DefaultUser DefaultDataMapInReader(SqlDataReader dataReader)
+    {
+        if (!dataReader.HasRows) return null;
+        DefaultUser user = new DefaultUser();
+        user.UserId = (int)dataReader["user_id"];
+        user.Email = (string)dataReader["email"];
+        user.Password = (string)dataReader["password"];
         user.Salt = (string)dataReader["salt"];
 
         return user;
