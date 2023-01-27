@@ -140,6 +140,7 @@ C:/Users/Reikd/Documents/Aeris-API-REST/API/bin/Debug/net6.0/System.IdentityMode
 /workspaces/Aeris-API-REST/API/obj/Debug/net6.0/API.csproj.CopyComplete
 /workspaces/Aeris-API-REST/API/obj/Debug/net6.0/API.genruntimeconfig.cache
 /workspaces/Aeris-API-REST/API/obj/Debug/net6.0/ref/API.dll
+<<<<<<< HEAD
 C:\Users\Reikd\Documents\Aeris-API-REST\API\obj\Debug\net6.0\API.csproj.AssemblyReference.cache
 C:\Users\Reikd\Documents\Aeris-API-REST\API\obj\Debug\net6.0\API.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Reikd\Documents\Aeris-API-REST\API\obj\Debug\net6.0\API.AssemblyInfoInputs.cache
@@ -149,3 +150,5 @@ C:\Users\Reikd\Documents\Aeris-API-REST\API\obj\Debug\net6.0\API.MvcApplicationP
 C:\Users\Reikd\Documents\Aeris-API-REST\API\obj\Debug\net6.0\API.dll
 C:\Users\Reikd\Documents\Aeris-API-REST\API\obj\Debug\net6.0\refint\API.dll
 C:\Users\Reikd\Documents\Aeris-API-REST\API\obj\Debug\net6.0\API.pdb
+=======
+>>>>>>> 52834fc7fe34d11e9c7a4d296b2049963287d5b1

@@ -10,6 +10,21 @@ C:/Users/Reikd/documents/Aeris/Entity/obj/Debug/net6.0/Entity.dll
 C:/Users/Reikd/documents/Aeris/Entity/obj/Debug/net6.0/refint/Entity.dll
 C:/Users/Reikd/documents/Aeris/Entity/obj/Debug/net6.0/Entity.pdb
 C:/Users/Reikd/documents/Aeris/Entity/obj/Debug/net6.0/ref/Entity.dll
+<<<<<<< HEAD
+=======
+C:/Users/Reikd/documents/aeris-api-rest/Entity/bin/Debug/net6.0/Entity.deps.json
+C:/Users/Reikd/documents/aeris-api-rest/Entity/bin/Debug/net6.0/Entity.dll
+C:/Users/Reikd/documents/aeris-api-rest/Entity/bin/Debug/net6.0/Entity.pdb
+C:/Users/Reikd/documents/aeris-api-rest/Entity/obj/Debug/net6.0/Entity.csproj.AssemblyReference.cache
+C:/Users/Reikd/documents/aeris-api-rest/Entity/obj/Debug/net6.0/Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Reikd/documents/aeris-api-rest/Entity/obj/Debug/net6.0/Entity.AssemblyInfoInputs.cache
+C:/Users/Reikd/documents/aeris-api-rest/Entity/obj/Debug/net6.0/Entity.AssemblyInfo.cs
+C:/Users/Reikd/documents/aeris-api-rest/Entity/obj/Debug/net6.0/Entity.csproj.CoreCompileInputs.cache
+C:/Users/Reikd/documents/aeris-api-rest/Entity/obj/Debug/net6.0/Entity.dll
+C:/Users/Reikd/documents/aeris-api-rest/Entity/obj/Debug/net6.0/refint/Entity.dll
+C:/Users/Reikd/documents/aeris-api-rest/Entity/obj/Debug/net6.0/Entity.pdb
+C:/Users/Reikd/documents/aeris-api-rest/Entity/obj/Debug/net6.0/ref/Entity.dll
+>>>>>>> 52834fc7fe34d11e9c7a4d296b2049963287d5b1
 /workspaces/Aeris-API-REST/Entity/bin/Debug/net6.0/Entity.deps.json
 /workspaces/Aeris-API-REST/Entity/bin/Debug/net6.0/Entity.dll
 /workspaces/Aeris-API-REST/Entity/bin/Debug/net6.0/Entity.pdb
@@ -22,6 +37,7 @@ C:/Users/Reikd/documents/Aeris/Entity/obj/Debug/net6.0/ref/Entity.dll
 /workspaces/Aeris-API-REST/Entity/obj/Debug/net6.0/refint/Entity.dll
 /workspaces/Aeris-API-REST/Entity/obj/Debug/net6.0/Entity.pdb
 /workspaces/Aeris-API-REST/Entity/obj/Debug/net6.0/ref/Entity.dll
+<<<<<<< HEAD
 C:\Users\Reikd\Documents\Aeris-API-REST\Entity\bin\Debug\net6.0\Entity.deps.json
 C:\Users\Reikd\Documents\Aeris-API-REST\Entity\bin\Debug\net6.0\Entity.dll
 C:\Users\Reikd\Documents\Aeris-API-REST\Entity\bin\Debug\net6.0\Entity.pdb
@@ -34,3 +50,5 @@ C:\Users\Reikd\Documents\Aeris-API-REST\Entity\obj\Debug\net6.0\Entity.dll
 C:\Users\Reikd\Documents\Aeris-API-REST\Entity\obj\Debug\net6.0\refint\Entity.dll
 C:\Users\Reikd\Documents\Aeris-API-REST\Entity\obj\Debug\net6.0\Entity.pdb
 C:\Users\Reikd\Documents\Aeris-API-REST\Entity\obj\Debug\net6.0\ref\Entity.dll
+=======
+>>>>>>> 52834fc7fe34d11e9c7a4d296b2049963287d5b1

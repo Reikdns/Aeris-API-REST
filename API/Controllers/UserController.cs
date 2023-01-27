@@ -78,7 +78,11 @@ public class UserController : Controller
         return Ok(response.Response);
     } 
 
+<<<<<<< HEAD
     //[Authorize(Roles="Admin")]
+=======
+    [Authorize(Roles="Admin")]
+>>>>>>> 52834fc7fe34d11e9c7a4d296b2049963287d5b1
     [HttpGet("search-by-key/{key}/{value}")]
     public ActionResult<UserViewModel> SearchByKey(string key, string value)
     {

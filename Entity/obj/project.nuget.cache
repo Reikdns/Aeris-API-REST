@@ -1,8 +1,15 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "m3J9pQ0sIvzF2QTrBpLeNt7Bowr9USxeZ78NC1u/Y6HbX+rq7TRye1zYsW5zonaIa6z0BOsmWoq2QKNbL/C+lg==",
+=======
+  "dgSpecHash": "7FZlAMHKfpRpsR6NP1q8e5QYdE1Fhm65apv/Fx8vvKPLKIuXSex/9WeoigsRF4O84tyJL48rUiKHPAnBYShJaA==",
+>>>>>>> 52834fc7fe34d11e9c7a4d296b2049963287d5b1
   "success": true,
-  "projectFilePath": "C:\\Users\\Reikd\\Documents\\Aeris-API-REST\\Entity\\Entity.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/workspaces/Aeris-API-REST/Entity/Entity.csproj",
+  "expectedPackageFiles": [
+    "/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.12/microsoft.netcore.app.ref.6.0.12.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.12/microsoft.aspnetcore.app.ref.6.0.12.nupkg.sha512"
+  ],
   "logs": []
 }

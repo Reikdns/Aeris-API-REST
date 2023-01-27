@@ -5,6 +5,12 @@ build_property.UsingMicrosoftNETSdkWeb =
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
+<<<<<<< HEAD:Application/obj/Debug/net6.0/Application.GeneratedMSBuildEditorConfig.editorconfig
 build_property.RootNamespace = Application
 build_property.ProjectDir = C:\Users\Reikd\Documents\Aeris-API-REST\Application\
+=======
+build_property.RootNamespace = BLL
+build_property.ProjectDir = /workspaces/Aeris-API-REST/BLL/
+>>>>>>> 52834fc7fe34d11e9c7a4d296b2049963287d5b1:BLL/obj/Debug/net6.0/BLL.GeneratedMSBuildEditorConfig.editorconfig

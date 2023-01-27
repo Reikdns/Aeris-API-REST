@@ -15,6 +15,26 @@ C:/Users/Reikd/documents/Aeris/BLL/obj/Debug/net6.0/BLL.dll
 C:/Users/Reikd/documents/Aeris/BLL/obj/Debug/net6.0/refint/BLL.dll
 C:/Users/Reikd/documents/Aeris/BLL/obj/Debug/net6.0/BLL.pdb
 C:/Users/Reikd/documents/Aeris/BLL/obj/Debug/net6.0/ref/BLL.dll
+<<<<<<< HEAD
+=======
+C:/Users/Reikd/documents/aeris-api-rest/BLL/bin/Debug/net6.0/BLL.deps.json
+C:/Users/Reikd/documents/aeris-api-rest/BLL/bin/Debug/net6.0/BLL.dll
+C:/Users/Reikd/documents/aeris-api-rest/BLL/bin/Debug/net6.0/BLL.pdb
+C:/Users/Reikd/documents/aeris-api-rest/BLL/bin/Debug/net6.0/DAL.dll
+C:/Users/Reikd/documents/aeris-api-rest/BLL/bin/Debug/net6.0/Entity.dll
+C:/Users/Reikd/documents/aeris-api-rest/BLL/bin/Debug/net6.0/Entity.pdb
+C:/Users/Reikd/documents/aeris-api-rest/BLL/bin/Debug/net6.0/DAL.pdb
+C:/Users/Reikd/documents/aeris-api-rest/BLL/obj/Debug/net6.0/BLL.csproj.AssemblyReference.cache
+C:/Users/Reikd/documents/aeris-api-rest/BLL/obj/Debug/net6.0/BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Reikd/documents/aeris-api-rest/BLL/obj/Debug/net6.0/BLL.AssemblyInfoInputs.cache
+C:/Users/Reikd/documents/aeris-api-rest/BLL/obj/Debug/net6.0/BLL.AssemblyInfo.cs
+C:/Users/Reikd/documents/aeris-api-rest/BLL/obj/Debug/net6.0/BLL.csproj.CoreCompileInputs.cache
+C:/Users/Reikd/documents/aeris-api-rest/BLL/obj/Debug/net6.0/BLL.csproj.CopyComplete
+C:/Users/Reikd/documents/aeris-api-rest/BLL/obj/Debug/net6.0/BLL.dll
+C:/Users/Reikd/documents/aeris-api-rest/BLL/obj/Debug/net6.0/refint/BLL.dll
+C:/Users/Reikd/documents/aeris-api-rest/BLL/obj/Debug/net6.0/BLL.pdb
+C:/Users/Reikd/documents/aeris-api-rest/BLL/obj/Debug/net6.0/ref/BLL.dll
+>>>>>>> 52834fc7fe34d11e9c7a4d296b2049963287d5b1
 /workspaces/Aeris-API-REST/BLL/obj/Debug/net6.0/BLL.dll
 /workspaces/Aeris-API-REST/BLL/obj/Debug/net6.0/refint/BLL.dll
 /workspaces/Aeris-API-REST/BLL/obj/Debug/net6.0/BLL.pdb
@@ -32,6 +52,7 @@ C:/Users/Reikd/documents/Aeris/BLL/obj/Debug/net6.0/ref/BLL.dll
 /workspaces/Aeris-API-REST/BLL/bin/Debug/net6.0/DAL.pdb
 /workspaces/Aeris-API-REST/BLL/obj/Debug/net6.0/BLL.csproj.CopyComplete
 /workspaces/Aeris-API-REST/BLL/obj/Debug/net6.0/ref/BLL.dll
+<<<<<<< HEAD
 C:\Users\Reikd\Documents\Aeris-API-REST\BLL\obj\Debug\net6.0\BLL.csproj.AssemblyReference.cache
 C:\Users\Reikd\Documents\Aeris-API-REST\BLL\obj\Debug\net6.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Reikd\Documents\Aeris-API-REST\BLL\obj\Debug\net6.0\BLL.AssemblyInfoInputs.cache
@@ -49,3 +70,5 @@ C:\Users\Reikd\Documents\Aeris-API-REST\BLL\bin\Debug\net6.0\Entity.pdb
 C:\Users\Reikd\Documents\Aeris-API-REST\BLL\bin\Debug\net6.0\DAL.pdb
 C:\Users\Reikd\Documents\Aeris-API-REST\BLL\obj\Debug\net6.0\BLL.csproj.CopyComplete
 C:\Users\Reikd\Documents\Aeris-API-REST\BLL\obj\Debug\net6.0\ref\BLL.dll
+=======
+>>>>>>> 52834fc7fe34d11e9c7a4d296b2049963287d5b1
