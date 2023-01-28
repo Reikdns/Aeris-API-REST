@@ -95,8 +95,11 @@ public class UserController : Controller
     [HttpGet("identity")]
     public IActionResult GetIdentity()
     {
-        var r = ((ClaimsIdentity)User.Identity).FindFirst(ClaimTypes.NameIdentifier);
-        return Ok(r == null ? "" : r.Value);
+        var nameIdentifier = ((ClaimsIdentity)User.Identity).FindFirst(ClaimTypes.NameIdentifier);
+        var rol = ((ClaimsIdentity)User.Identity).FindFirst(ClaimTypes.Role);
+        if(nameIdentifier == null || rol == null) {return Forbid();}
+        IdentityModel identityModel = new IdentityModel(nameIdentifier.Value, rol.Value);
+        return Ok(identityModel == null ? "" : identityModel);
     }
 
     private User MapUser(UserInputModel user){

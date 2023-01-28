@@ -34,7 +34,7 @@ namespace API.Controllers
                 return BadRequest(ErrorHelper.GetModelStateErrors(ModelState));
             }
 
-            var response = _userService.SearchByKey("username", systemUser.Username);
+            var response = _userService.DefaultSearchByKey("email", systemUser.Email);
 
             if(response.Error)
             {
@@ -42,8 +42,10 @@ namespace API.Controllers
             }
 
             var secretKey = Configuration.GetValue<string>("SecretKey");
+
+            string rol = _userService.SearchByKey("username", response.Response.Email).Response.Rol;
             
-            string bearerToken = AuthenticationHelper.CreateToken(systemUser, response.Response, secretKey);
+            string bearerToken = AuthenticationHelper.CreateToken(systemUser, response.Response, rol, secretKey);
 
             if (bearerToken.Equals(String.Empty))
             {

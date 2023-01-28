@@ -8,7 +8,7 @@ namespace API.Models
     public class LoginViewModel
     {
         [Required(ErrorMessage="Es necesario proporcionar el nombre de usuario.")]
-        public string Username { get; set; }
+        public string Email { get; set; }
         [Required(ErrorMessage="Es necesario proporcional la clave del ususario.")]
         public string Password { get; set; }
 

@@ -35,13 +35,61 @@ public class UserDataAcces{
     {
         using(var command = _connection.CreateCommand())
         {
-            command.CommandText = @"INSERT INTO LoginUser(email, password, salt)"
-            + "VALUES (@email, @password, @salt)";
-            command.Parameters.AddWithValue("@email", user.Email);
-            command.Parameters.AddWithValue("@password", user.Password);
-            command.Parameters.AddWithValue("@salt", user.Salt);
-            command.ExecuteNonQuery();
+            SqlTransaction transaction = _connection.BeginTransaction();
+            command.Transaction = transaction;
+            try
+            {
+                InsertUser(user, command);
+                int userId = GetUserKey(user, command);
+                InsertLoginUser(user, command, userId);
+                transaction.Commit();
+            }
+            catch (Exception e)
+            {
+                transaction.Rollback();
+            }
+            finally
+            {
+                transaction.Dispose();
+            }      
         }
+    }
+
+    private static void InsertLoginUser(DefaultUser user, SqlCommand command, int userId)
+    {
+        command.CommandText = @"INSERT INTO LoginUser(user_id, email, password, salt)"
+                            + "VALUES (@user_id, @email, @password, @salt)";
+        command.Parameters.AddWithValue("@user_id", userId);
+        command.Parameters.AddWithValue("@email", user.Email);
+        command.Parameters.AddWithValue("@password", user.Password);
+        command.Parameters.AddWithValue("@salt", user.Salt);
+        command.ExecuteNonQuery();
+    }
+
+    private void InsertUser(DefaultUser user, SqlCommand command)
+    {
+        command.CommandText = @"INSERT INTO USERS (username, password, rol, salt)"
+                            + "VALUES (@username, @password, @rol, @salt)";
+        command.Parameters.AddWithValue("@username", user.Email);
+        command.Parameters.AddWithValue("@password", user.Password);
+        command.Parameters.AddWithValue("@rol", "Admin");
+        command.Parameters.AddWithValue("@salt", user.Salt);
+        command.ExecuteNonQuery();
+        command.Parameters.Clear();
+    }
+
+    private static int GetUserKey(DefaultUser user, SqlCommand command)
+    {
+        command.CommandText = $"SELECT user_id FROM Users WHERE username = @email";
+        command.Parameters.AddWithValue("@email", user.Email);
+
+        SqlDataReader dataReader = command.ExecuteReader();
+        command.Parameters.Clear();
+
+        dataReader.Read();
+        int userId = (int)dataReader["user_id"];
+        dataReader.Close();
+        return userId;
     }
 
     public List<User> SearchAll ( ) {
@@ -114,13 +162,14 @@ public class UserDataAcces{
         if (!dataReader.HasRows) return null;
         User user = new User ( );
         user.UserId = (int) dataReader["user_id"];
-        user.Nombres = (string) dataReader["nombres"];
-        user.Apellidos = (string) dataReader["apellidos"];
-        user.Edad = (int) dataReader["edad"];
+
+        user.Nombres = user.Nombres == null ? null : (string) dataReader["nombres"];
+        user.Apellidos = user.Apellidos == null? null : (string) dataReader["apellidos"];
+        user.Edad = user.Edad == null ? null: (int) dataReader["edad"];
         user.Username = (string) dataReader["username"];
         user.Password = (string) dataReader["password"];                     
         user.Rol = (string) dataReader["rol"];
-        user.Identificacion = (string) dataReader["identificacion"];
+        user.Identificacion = user.Identificacion == null ? null : (string) dataReader["identificacion"];
         user.Salt = (string)dataReader["salt"];
 
         return user;

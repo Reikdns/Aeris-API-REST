@@ -18,7 +18,7 @@ public class UserViewModel
 
     public string Apellidos { get; set; }
 
-    public int Edad { get; set; }
+    public int? Edad { get; set; }
 
     public string Username { get; set; } 
 
