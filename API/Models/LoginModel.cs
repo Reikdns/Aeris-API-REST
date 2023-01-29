@@ -13,4 +13,16 @@ namespace API.Models
         public string Password { get; set; }
 
     }
+
+    public class LoginResponseModel
+    {
+        public string Token { get; set; }
+        public string Rol { get; set; }     
+
+        public LoginResponseModel(string token, string rol)
+        {
+            Token = token;
+            Rol = rol;
+        }
+    }
 }

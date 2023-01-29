@@ -20,7 +20,7 @@ public class UserViewModel
 
     public int? Edad { get; set; }
 
-    public string Username { get; set; } 
+    public string Email { get; set; } 
 
     public string Rol { get; set;} 
 
@@ -38,7 +38,7 @@ public class UserViewModel
         Nombres = user.Nombres;
         Apellidos = user.Apellidos;
         Edad = user.Edad; 
-        Username = user.Username;
+        Email = user.Email;
         Rol = user.Rol;
         Identificacion = user.Identificacion;
         UserId = user.UserId;

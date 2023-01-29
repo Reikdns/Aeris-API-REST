@@ -15,13 +15,13 @@ public class UserService
         _repository = new UserDataAcces(_connection);
     }
 
-    public RequestResponse<User> SaveUser(User user)
+    public RequestResponse<User> SaveUserPersonalData(User user)
     {
-        if(Validate("identificacion", user.Identificacion) && Validate("username", user.Username)){        
+        if(Validate("identificacion", user.Identificacion) && Validate("email", user.Email)){        
             try
             {                                          
                 _connection.Open();                
-                _repository.SaveUser(user);
+                _repository.SaveUserPersonalData(user);
                 _connection.Close();
                 return new RequestResponse<User>(user);
             }
@@ -44,7 +44,7 @@ public class UserService
                 _connection.Open();
                 _repository.SaveDefaultUser(user);
                 _connection.Close();
-                return new RequestResponse<DefaultUser>(user);
+                return new RequestResponse<DefaultUser>("La cuenta ha sido registrada exitosamente.");
             }
             catch (Exception e)
             {
@@ -102,7 +102,7 @@ public class UserService
             User user = _repository.SearchByKey(key, value);
             _connection.Close();
 
-            if(user.Username == null)
+            if(user.Email == null)
             {
                 throw new Exception("El usuario no ha sido encontrado");
             }

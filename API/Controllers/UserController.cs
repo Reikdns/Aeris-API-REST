@@ -16,6 +16,7 @@ using System.Security.Claims;
 
 [Route("[controller]")]
 [ApiController]
+[Authorize]
 public class UserController : Controller
 {
     private readonly UserService _userService;
@@ -28,7 +29,7 @@ public class UserController : Controller
         _userService = new UserService(connectionString);
     }
 
-    //[Authorize(Roles="Admin")]
+    [Authorize(Roles="Admin")]
     [HttpGet("get-users")]
     public ActionResult<List<UserViewModel>> GetUsers()
     {   
@@ -44,7 +45,7 @@ public class UserController : Controller
         return Ok(users);
     }
 
-    //[Authorize(Roles="Admin")]
+    [Authorize(Roles="Admin")]
     [HttpPost("register-user")]
     public ActionResult<UserViewModel> RegisterUser(UserInputModel user){
 
@@ -52,7 +53,7 @@ public class UserController : Controller
         user.Password = hashedPassword.Password;
         user.Salt = hashedPassword.Salt;
 
-        var response = _userService.SaveUser(MapUser(user));
+        var response = _userService.SaveUserPersonalData(MapUser(user));
 
         if(response.Error){
             return BadRequest(response.Message);
@@ -78,7 +79,7 @@ public class UserController : Controller
         return Ok(response.Response);
     } 
 
-    //[Authorize(Roles="Admin")]
+    [Authorize(Roles="Admin")]
     [HttpGet("search-by-key/{key}/{value}")]
     public ActionResult<UserViewModel> SearchByKey(string key, string value)
     {
@@ -108,10 +109,7 @@ public class UserController : Controller
             Apellidos = user.Apellidos,
             Edad = user.Edad,
             Identificacion = user.Identificacion,
-            Password = user.Password,
             Rol = user.Rol,
-            Username = user.Username,
-            Salt = user.Salt
         };
     }
 

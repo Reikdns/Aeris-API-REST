@@ -43,9 +43,11 @@ namespace API.Controllers
 
             var secretKey = Configuration.GetValue<string>("SecretKey");
 
-            string rol = _userService.SearchByKey("username", response.Response.Email).Response.Rol;
+            string rol = _userService.SearchByKey("email", response.Response.Email).Response.Rol;
             
             string bearerToken = AuthenticationHelper.CreateToken(systemUser, response.Response, rol, secretKey);
+
+            LoginResponseModel responseModel = new LoginResponseModel(bearerToken, rol);
 
             if (bearerToken.Equals(String.Empty))
             {
@@ -53,7 +55,7 @@ namespace API.Controllers
             }
             else
             {
-                return Ok(bearerToken);
+                return Ok(responseModel);
             }
         }
     }
